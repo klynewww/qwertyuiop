@@ -1,0 +1,121 @@
+{
+  "config": {
+    "errors": {
+      "duplicate_invoice": 1,
+      "missing_or_partial_allocation": 1,
+      "period_cutoff": 1,
+      "wrong_date_or_fx_rate": 1
+    },
+    "n_boundary_legit": 2,
+    "n_entities": 10,
+    "n_invoices": 65,
+    "n_returns": 2,
+    "n_subscribers": 3,
+    "period_end": "2026-03-31",
+    "period_start": "2026-01-01",
+    "profile": "medium",
+    "scenarios": {
+      "duplicate_with_fx_error": 1
+    }
+  },
+  "episode_id": "EP-81402391E4C4",
+  "generator_version": "1.0.0",
+  "injections": [
+    {
+      "after": {
+        "allocated_minor": 2940736,
+        "fx_date": "2026-02-14",
+        "rate": "0.29565648"
+      },
+      "before": {
+        "allocated_minor": 2935117,
+        "fx_date": "2026-02-21",
+        "rate": "0.29509152"
+      },
+      "invoice_id": "INV-000052",
+      "issue_id": "ISS-001",
+      "operation": "convert_payment_with_wrong_fx",
+      "payment_id": "PAY-000028",
+      "scenario": null,
+      "type": "wrong_date_or_fx_rate",
+      "variant": "wrong_date"
+    },
+    {
+      "inserted_invoice_id": "INV-000069",
+      "inserted_ledger_row_ids": [
+        "R000234",
+        "R000235"
+      ],
+      "issue_id": "ISS-002",
+      "operation": "insert_copy_of_invoice",
+      "scenario": null,
+      "shift_seconds": 39156,
+      "source_invoice_id": "INV-000068",
+      "type": "duplicate_invoice"
+    },
+    {
+      "after": {
+        "applied_minor": 0,
+        "unapplied_minor": 246257396
+      },
+      "before": {
+        "applied_minor": 246257396
+      },
+      "invoice_id": "INV-000072",
+      "issue_id": "ISS-003",
+      "operation": "apply_payment_to_ledger_partially",
+      "payment_id": "PAY-000044",
+      "scenario": null,
+      "type": "missing_or_partial_allocation",
+      "variant": "missing"
+    },
+    {
+      "inserted_invoice_id": "INV-000075",
+      "inserted_ledger_row_ids": [
+        "R000252",
+        "R000253"
+      ],
+      "issue_id": "ISS-004",
+      "operation": "insert_copy_of_invoice",
+      "scenario": "duplicate_with_fx_error",
+      "shift_seconds": 73931,
+      "source_invoice_id": "INV-000074",
+      "type": "duplicate_invoice"
+    },
+    {
+      "after": {
+        "allocated_minor": 93747,
+        "fx_date": "2026-03-23",
+        "rate": "0.00205262"
+      },
+      "before": {
+        "allocated_minor": 93299,
+        "fx_date": "2026-03-18",
+        "rate": "0.00204281"
+      },
+      "invoice_id": "INV-000074",
+      "issue_id": "ISS-005",
+      "operation": "convert_payment_with_wrong_fx",
+      "payment_id": "PAY-000043",
+      "scenario": "duplicate_with_fx_error",
+      "type": "wrong_date_or_fx_rate",
+      "variant": "wrong_date"
+    },
+    {
+      "after": {
+        "posted_at": "2026-04-01T00:37:53+06:00"
+      },
+      "before": {
+        "posted_at": "2026-03-30T14:58:35+06:00"
+      },
+      "invoice_id": "INV-000083",
+      "issue_id": "ISS-006",
+      "operation": "shift_ledger_posting_across_period_boundary",
+      "scenario": null,
+      "type": "period_cutoff",
+      "variant": "late"
+    }
+  ],
+  "schema_version": "1.0",
+  "seed": 2006
+}

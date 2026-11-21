@@ -1,0 +1,27 @@
+{
+  "secret_marker": "TRUTH-ONLY-7f3a",
+  "issues": [
+    {
+      "issue_id": "ISS-0001",
+      "type": "duplicate_invoice",
+      "affected_ids": [
+        "INV-0002",
+        "INV-0003"
+      ],
+      "expected_amount_minor": 50000,
+      "currency": "EUR",
+      "amount_tolerance_minor": 0,
+      "scenario": null,
+      "acceptable_evidence_sets": [
+        [
+          "DOC-0002",
+          "DOC-0003"
+        ],
+        [
+          "INV-0002",
+          "INV-0003"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "accounts": {
+    "cash": "1000",
+    "fx_clearing": "1500",
+    "receivable": "1200",
+    "revenue": "4000",
+    "unapplied_cash": "2100"
+  },
+  "allocation": "allocated_minor is in the invoice currency; for a payment in another currency it equals convert(amount_minor, payment->invoice currency, rate of the payment's local date) with the rounding below",
+  "fx_rate_date": {
+    "invoice": "issue_date",
+    "payment": "payment_date"
+  },
+  "fx_rate_direction": "units of target_currency per 1 unit of source_currency",
+  "fx_record_id": "FX:<date>:<source_currency>:<target_currency>",
+  "ledger_application": "payment documents are applied to invoices in the ledger: account 1200 credit per invoice; any part not applied sits on account 2100",
+  "period_boundary": "period_start..period_end inclusive, in the manifest timezone; records dated after period_end are the next period",
+  "rounding": {
+    "applies_to": "fx_conversion_of_minor_units",
+    "mode": "ROUND_HALF_EVEN"
+  },
+  "schema_version": "1.0"
+}

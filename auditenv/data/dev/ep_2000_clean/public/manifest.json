@@ -1,0 +1,24 @@
+{
+  "base_currency": "USD",
+  "counts": {
+    "fx_rows": 1248,
+    "invoices": 77,
+    "ledger_rows": 270,
+    "payments": 49
+  },
+  "currencies": {
+    "EUR": 2,
+    "JPY": 0,
+    "KZT": 2,
+    "USD": 2
+  },
+  "episode_id": "EP-30A55F5D4006",
+  "period_end": "2026-03-31",
+  "period_start": "2026-01-01",
+  "rounding": {
+    "applies_to": "fx_conversion_of_minor_units",
+    "mode": "ROUND_HALF_EVEN"
+  },
+  "schema_version": "1.0",
+  "timezone": "+06:00"
+}

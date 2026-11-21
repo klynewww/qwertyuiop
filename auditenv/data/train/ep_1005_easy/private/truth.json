@@ -1,0 +1,46 @@
+{
+  "episode_id": "EP-4BF6E19CA904",
+  "issues": [
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-INV-000041",
+          "DOC-INV-000042"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000041",
+        "INV-000042"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "KZT",
+      "expected_amount_minor": 45408099,
+      "issue_id": "ISS-001",
+      "scenario": null,
+      "type": "duplicate_invoice"
+    },
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-PAY-000031",
+          "R000196"
+        ],
+        [
+          "DOC-PAY-000031",
+          "R000197"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000053",
+        "PAY-000031"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "USD",
+      "expected_amount_minor": 61488,
+      "issue_id": "ISS-002",
+      "scenario": null,
+      "type": "missing_or_partial_allocation"
+    }
+  ],
+  "schema_version": "1.0"
+}

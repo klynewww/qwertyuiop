@@ -1,0 +1,42 @@
+{
+  "episode_id": "EP-D8ED251F2152",
+  "issues": [
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-PAY-000001",
+          "R000018"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000002",
+        "PAY-000001"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "JPY",
+      "expected_amount_minor": 375395,
+      "issue_id": "ISS-001",
+      "scenario": null,
+      "type": "missing_or_partial_allocation"
+    },
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-INV-000009",
+          "DOC-INV-000012"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000009",
+        "INV-000012"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "KZT",
+      "expected_amount_minor": 374931500,
+      "issue_id": "ISS-002",
+      "scenario": null,
+      "type": "duplicate_invoice"
+    }
+  ],
+  "schema_version": "1.0"
+}

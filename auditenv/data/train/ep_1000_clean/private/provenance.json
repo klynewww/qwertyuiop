@@ -1,0 +1,19 @@
+{
+  "config": {
+    "errors": {},
+    "n_boundary_legit": 2,
+    "n_entities": 10,
+    "n_invoices": 60,
+    "n_returns": 2,
+    "n_subscribers": 3,
+    "period_end": "2026-03-31",
+    "period_start": "2026-01-01",
+    "profile": "clean",
+    "scenarios": {}
+  },
+  "episode_id": "EP-D0D2593386ED",
+  "generator_version": "1.0.0",
+  "injections": [],
+  "schema_version": "1.0",
+  "seed": 1000
+}

@@ -1,0 +1,18 @@
+{
+  "findings": [
+    {
+      "type": "duplicate_invoice",
+      "affected_ids": [
+        "INV-0002",
+        "INV-0003"
+      ],
+      "evidence_ids": [
+        "DOC-0002",
+        "DOC-0003"
+      ],
+      "claimed_amount_minor": 50000,
+      "currency": "EUR",
+      "explanation": "INV-0003 повторяет INV-0002: тот же контрагент, дата и сумма; оплата только одна."
+    }
+  ]
+}

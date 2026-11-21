@@ -1,0 +1,42 @@
+{
+  "episode_id": "EP-9593892DAC12",
+  "issues": [
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-PAY-000017",
+          "R000117"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000035",
+        "PAY-000017"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "JPY",
+      "expected_amount_minor": 330415,
+      "issue_id": "ISS-001",
+      "scenario": null,
+      "type": "missing_or_partial_allocation"
+    },
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-INV-000036",
+          "DOC-INV-000038"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000036",
+        "INV-000038"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "KZT",
+      "expected_amount_minor": 375351899,
+      "issue_id": "ISS-002",
+      "scenario": null,
+      "type": "duplicate_invoice"
+    }
+  ],
+  "schema_version": "1.0"
+}

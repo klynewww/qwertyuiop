@@ -1,0 +1,131 @@
+{
+  "episode_id": "EP-4B2315B94B49",
+  "issues": [
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-INV-000033",
+          "DOC-INV-000036"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000033",
+        "INV-000036"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "JPY",
+      "expected_amount_minor": 2252811,
+      "issue_id": "ISS-001",
+      "scenario": "duplicate_with_fx_error",
+      "type": "duplicate_invoice"
+    },
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-PAY-000023",
+          "FX:2026-02-10:KZT:JPY"
+        ],
+        [
+          "FX:2026-02-10:KZT:JPY",
+          "R000125",
+          "R000128"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000033",
+        "PAY-000023"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "JPY",
+      "expected_amount_minor": 11258,
+      "issue_id": "ISS-002",
+      "scenario": "duplicate_with_fx_error",
+      "type": "wrong_date_or_fx_rate"
+    },
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-INV-000045",
+          "DOC-INV-000048"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000045",
+        "INV-000048"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "JPY",
+      "expected_amount_minor": 1000593,
+      "issue_id": "ISS-003",
+      "scenario": null,
+      "type": "duplicate_invoice"
+    },
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-PAY-000039",
+          "R000209"
+        ],
+        [
+          "DOC-PAY-000039",
+          "R000210"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000049",
+        "PAY-000039"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "KZT",
+      "expected_amount_minor": 247685185,
+      "issue_id": "ISS-004",
+      "scenario": null,
+      "type": "missing_or_partial_allocation"
+    },
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-PAY-000053",
+          "FX:2026-03-25:KZT:JPY"
+        ],
+        [
+          "FX:2026-03-25:KZT:JPY",
+          "R000277",
+          "R000280"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000073",
+        "PAY-000053"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "JPY",
+      "expected_amount_minor": 23030,
+      "issue_id": "ISS-005",
+      "scenario": null,
+      "type": "wrong_date_or_fx_rate"
+    },
+    {
+      "acceptable_evidence_sets": [
+        [
+          "DOC-INV-000085",
+          "R000305"
+        ],
+        [
+          "DOC-INV-000085",
+          "R000306"
+        ]
+      ],
+      "affected_ids": [
+        "INV-000085"
+      ],
+      "amount_tolerance_minor": 0,
+      "currency": "EUR",
+      "expected_amount_minor": 1528200,
+      "issue_id": "ISS-006",
+      "scenario": null,
+      "type": "period_cutoff"
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,9 @@
+{
+  "company_id": "mini-001",
+  "seed": 0,
+  "base_currency": "EUR",
+  "period_start": "2026-03-01",
+  "period_end": "2026-03-31",
+  "tables": ["ledger", "invoices", "payments", "fx"],
+  "currencies": {"EUR": 2, "USD": 2}
+}

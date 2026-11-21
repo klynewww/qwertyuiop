@@ -1,0 +1,52 @@
+{
+  "config": {
+    "errors": {
+      "duplicate_invoice": 1,
+      "missing_or_partial_allocation": 1
+    },
+    "n_boundary_legit": 2,
+    "n_entities": 10,
+    "n_invoices": 60,
+    "n_returns": 2,
+    "n_subscribers": 3,
+    "period_end": "2026-03-31",
+    "period_start": "2026-01-01",
+    "profile": "easy",
+    "scenarios": {}
+  },
+  "episode_id": "EP-D8ED251F2152",
+  "generator_version": "1.0.0",
+  "injections": [
+    {
+      "after": {
+        "applied_minor": 0,
+        "unapplied_minor": 375395
+      },
+      "before": {
+        "applied_minor": 375395
+      },
+      "invoice_id": "INV-000002",
+      "issue_id": "ISS-001",
+      "operation": "apply_payment_to_ledger_partially",
+      "payment_id": "PAY-000001",
+      "scenario": null,
+      "type": "missing_or_partial_allocation",
+      "variant": "missing"
+    },
+    {
+      "inserted_invoice_id": "INV-000012",
+      "inserted_ledger_row_ids": [
+        "R000029",
+        "R000030"
+      ],
+      "issue_id": "ISS-002",
+      "operation": "insert_copy_of_invoice",
+      "scenario": null,
+      "shift_seconds": 148973,
+      "source_invoice_id": "INV-000009",
+      "type": "duplicate_invoice"
+    }
+  ],
+  "schema_version": "1.0",
+  "seed": 2005
+}
